@@ -14,10 +14,11 @@
     <style>
     </style>
     <link rel="stylesheet" href="style/style.css">
-    <script src=1.js></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 </head>
 
-<body  onload=sc()>
+<body>
 
     <div class="jumbotron text-center" style="margin-bottom:0">
         <h1>Luyện tập 1 Câu 1</h1>
@@ -60,3 +61,32 @@
 </body>
 
 </html>
+<script>
+    $(document).ready(()=>{
+        $('body').ready(()=>{
+            // slice string and get number
+            rng = prompt("Enter the range");
+            res = rng.split("-");
+            // check lenght string was sliced
+            if (res.length != 2) {
+                alert("invalid range ");
+                return;
+            }
+            // assignment variable and parse to Int
+            first = parseInt(res[0]);
+            second = parseInt(res[1]);
+            // check Int sliced  first > second?
+            if (first > second) {
+                alert("invalid range ");
+                return;
+            }
+            // if first < second is display string html 
+            str = "<table border=2><tr><th>Number</th><th>Square</th><th>Cube</th></tr>";
+            for (i = first; i <= second; i++) {
+                // connect str from first to second and use recipe square and Cube
+                str = str + "<tr><td>" + i + "<td>" + i * i + "<td>" + i * i * i;
+            }
+            document.getElementById("table1").innerHTML = str;
+        })
+    })
+</script>

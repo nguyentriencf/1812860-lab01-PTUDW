@@ -21,5 +21,5 @@ function sc() {
       // connect str from first to second and use recipe square and Cube
     str = str + "<tr><td>" + i + "<td>" + i * i + "<td>" + i * i * i;
   }
-  document.write(str);
+  document.getElementById("table1").innerHTML= str;
 }
