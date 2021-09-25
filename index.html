@@ -15,10 +15,7 @@
 </head>
 <body>
 
-<div class="jumbotron text-center" style="margin-bottom:0">
-  <h1>Bài Thực Hành Lab-01</h1>
-</div>
-
+  <div id="header"></div>
 <nav class="nav navbar navbar-expand-sm bg-dark navbar-dark">
   <a class="navbar-brand" href="#"><i class="fas fa-home"></i></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -61,23 +58,31 @@
       <hr class="d-sm-none">
     </div>
     <div class="col-sm-8">
-      <h2>Subjects</h2>
+      <h2>web application development</h2>
       <h5></h5>
-      <div class="fakeimg"><img id="webImg" src="img/web.jpg" alt=""></div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      <div class="fakeimg"><img id="webImg" src="img/web.jpg" alt=""> </div> 
+     
+      <p>Web application development is the process involved with building a web application. It is more focused on interacting
+      with the browser than standard engineering processes. Most cases of web application development will involve defining
+      the problem, mocking-up the solution, engaging with users, adopting a framework/choosing a tool, and finally, building
+      and testing the web application - in most cases, iteratively with users.</p>
       <br>
-      <h2>TITLE HEADING</h2>
-      <h5>Title description, Sep 2, 2017</h5>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      <h2>Boostrap</h2>
+      <div class="fakeimg"><img id="webImg" src="img/bootstrap.png" alt=""> </div>
+      <h5>Get started with Bootstrap, the world’s most popular framework for building responsive, mobile-first sites, with
+      BootstrapCDN and a template starter page.</h5>
+      <p>It comes with a large number of built-in components, which you can drag and drop to assemble responsive web pages. The
+      app is built on top of the hugely popular Bootstrap framework, and exports clean and semantic HTML.</p>
     </div>
   </div>
 </div>
-
-<div class="jumbotron text-center" style="margin-bottom:0">
-  
-</div>
+<div id="footer"></div>
 
 </body>
 </html>
+<script>
+  $(function () {
+    $("#header").load("header.html");
+    $("#footer").load("footer.html");
+  });
+</script>

@@ -21,9 +21,7 @@
 
 <body>
 
-    <div class="jumbotron text-center" style="margin-bottom:0">
-        <h1>Luyện tập 3 Câu 2</h1>
-    </div>
+    <div id="header"></div>
 
     <nav class="nav navbar navbar-expand-sm bg-dark navbar-dark">
         <a class="navbar-brand" href="./index.html"><i class="fas fa-home"></i></a>
@@ -95,7 +93,7 @@
         </div>
     </div>
 </body>
-
+<div id="footer"></div>
 </html>
 <script>
     $(document).ready(() => {
@@ -201,5 +199,11 @@
         checkd(num)
 
     })
-
+ 
+</script>
+<script>
+    $(function () {
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+    });
 </script>
